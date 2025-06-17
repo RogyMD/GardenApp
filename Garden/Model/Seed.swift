@@ -40,10 +40,10 @@ struct Seed: Identifiable, Equatable {
   }
   var fruitName: String {
     switch kind {
-    case .avocado: "an avocado"
-    case .apple: "an apple"
-    case .pear: "a pear"
-    case .cherry: "a cherry"
+    case .avocado: "An avocado"
+    case .apple: "An apple"
+    case .pear: "A pear"
+    case .cherry: "A cherry"
     }
   }
 }

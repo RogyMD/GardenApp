@@ -1,6 +1,6 @@
 import AppIntents
 
-struct SeedAppEntity: AppEntity, Hashable, Equatable {
+struct SeedAppEntity: AppEntity {
   let id: UUID
   let title: String
   var displayRepresentation: DisplayRepresentation {

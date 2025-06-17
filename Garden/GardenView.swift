@@ -35,6 +35,9 @@ struct GardenView: View {
           .padding(.top)
       }
     }
+    .onReceive(model.$field.map(\.seeds).removeDuplicates()) { _ in
+      GardenAppShortcutsProvider.updateAppShortcutParameters()
+    }
   }
   
   func seedsGrid(title: String, seeds: [Seed], background: Color, action: @escaping (Seed) -> Void) -> some View {
