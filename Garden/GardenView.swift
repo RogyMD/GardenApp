@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct GardenView: View {
-  @ObservedObject
-  var model: Model = .shared
+  @ObservedObject var model: Model = .shared
+  @State var isPlantTreePresented = false
   
   var body: some View {
     ScrollView {
@@ -15,8 +15,12 @@ struct GardenView: View {
           background: Color(uiColor: .secondarySystemBackground),
           action: model.plant
         )
+        Button("Plant a Tree", systemImage: "tree.fill") {
+          isPlantTreePresented = true
+        }
+        .buttonStyle(.borderedProminent)
         Divider()
-        Section() {
+        Section {
           seedsGrid(
             title: "🌱Garden",
             seeds: model.field.seeds,
@@ -37,6 +41,12 @@ struct GardenView: View {
     }
     .onReceive(model.$field.map(\.seeds).removeDuplicates()) { _ in
       GardenAppShortcutsProvider.updateAppShortcutParameters()
+    }
+    .sheet(isPresented: $isPlantTreePresented) {
+      NavigationStack {
+        PlantTreeView()
+          .navigationTitle("Plant a Tree")
+      }
     }
   }
   
