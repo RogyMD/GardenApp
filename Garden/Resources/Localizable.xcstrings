@@ -1,0 +1,205 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "shouldTranslate" : false
+    },
+    "%@ seed was planted for you." : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sămânța %@ a fost plantată pentru tine."
+          }
+        }
+      }
+    },
+    "🌱Garden" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🌱Grădină"
+          }
+        }
+      }
+    },
+    "🫙Bank with %lld Seeds" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "🫙Bank with %lld Seed"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "🫙Bank with %lld Seeds"
+                }
+              }
+            }
+          }
+        },
+        "ro" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "🫙Borcan cu %lld semințe"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "🫙Borcan cu %lld sămînță"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "🫙Borcan cu %lld de semințe"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Found Ripe Fruits" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fructe coapte găsite"
+          }
+        }
+      }
+    },
+    "Fruit" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fruct"
+          }
+        }
+      }
+    },
+    "Fruit Seed" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sămânță de fruct"
+          }
+        }
+      }
+    },
+    "Gardening is Fun" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grădinăritul este distractiv"
+          }
+        }
+      }
+    },
+    "No seeds to plant." : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu există semințe de plantat."
+          }
+        }
+      }
+    },
+    "Pick ${fruitSeed} Fruit" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Culege fructul ${fruitSeed}"
+          }
+        }
+      }
+    },
+    "Pick a Fruit" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alege un fruct"
+          }
+        }
+      }
+    },
+    "Pick a ripe fruit of your choice." : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alege un fruct copt la alegere."
+          }
+        }
+      }
+    },
+    "Plant a Seed" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plantează o sămânță"
+          }
+        }
+      }
+    },
+    "Plant a Tree" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plantează un copac"
+          }
+        }
+      }
+    },
+    "Ripe Fruits" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fructe coapte"
+          }
+        }
+      }
+    },
+    "The %@ is not ripe yet or has been already picked." : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ nu este încă copt sau a fost deja cules."
+          }
+        }
+      }
+    },
+    "The %@ was picked for you." : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ a fost cules pentru tine."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

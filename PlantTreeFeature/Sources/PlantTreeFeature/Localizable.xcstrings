@@ -1,0 +1,17 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Thank You 🫰🏽" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulțumesc 🫰🏽"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

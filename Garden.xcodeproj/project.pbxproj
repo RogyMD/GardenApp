@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C483E54A2E5F60900007EAE1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C483E5492E5F60900007EAE1 /* StoreKit.framework */; };
 		C4909BCE2E0225AD002892AC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C4909BCD2E0225A6002892AC /* README.md */; };
+		C4F1E5FC2EF713B6000FE7CC /* PlantTreeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = C4F1E5FB2EF713B6000FE7CC /* PlantTreeFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		C47C19E22DFF6AD600AC5766 /* GardenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GardenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C483E5492E5F60900007EAE1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C4909BCD2E0225A6002892AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C4F1E5FA2EF712BD000FE7CC /* PlantTreeFeature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PlantTreeFeature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -73,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C483E54A2E5F60900007EAE1 /* StoreKit.framework in Frameworks */,
+				C4F1E5FC2EF713B6000FE7CC /* PlantTreeFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +101,7 @@
 			children = (
 				C4909BCD2E0225A6002892AC /* README.md */,
 				C47C19CD2DFF6AD400AC5766 /* Garden */,
+				C4F1E5FA2EF712BD000FE7CC /* PlantTreeFeature */,
 				C47C19DB2DFF6AD600AC5766 /* GardenTests */,
 				C47C19E52DFF6AD600AC5766 /* GardenUITests */,
 				C483E5482E5F60900007EAE1 /* Frameworks */,
@@ -143,6 +147,7 @@
 			);
 			name = Garden;
 			packageProductDependencies = (
+				C4F1E5FB2EF713B6000FE7CC /* PlantTreeFeature */,
 			);
 			productName = Garden;
 			productReference = C47C19CB2DFF6AD400AC5766 /* Garden.app */;
@@ -202,7 +207,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					C47C19CA2DFF6AD400AC5766 = {
 						CreatedOnToolsVersion = 16.3;
@@ -223,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ro,
 			);
 			mainGroup = C47C19C22DFF6AD400AC5766;
 			minimizedProjectReferenceProxies = 1;
@@ -306,6 +312,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -360,7 +367,9 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -370,6 +379,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -417,7 +427,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -438,7 +450,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.rogy.Garden;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,7 +482,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.rogy.Garden;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -596,6 +610,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4F1E5FB2EF713B6000FE7CC /* PlantTreeFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PlantTreeFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C47C19C32DFF6AD400AC5766 /* Project object */;
 }

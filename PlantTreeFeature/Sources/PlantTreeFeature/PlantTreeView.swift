@@ -1,10 +1,11 @@
 import StoreKit
 import SwiftUI
 
-struct PlantTreeView: View {
+public struct PlantTreeView: View {
   let productId = "app.rogy.garden.plantTree"
   @StateObject var viewModel = PlantTreeViewModel()
-  var body: some View {
+  public init() {}
+  public var body: some View {
     ProductView(id: productId) {
       Image(systemName: "tree.fill")
         .resizable()
@@ -21,6 +22,7 @@ struct PlantTreeView: View {
     .onInAppPurchaseCompletion { _, result in
       viewModel.onInAppPurchaseCompletion(result)
     }
+    .navigationTitle(String(localized: "Thank You 🫰🏽", bundle: .module))
   }
 }
 

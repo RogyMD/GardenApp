@@ -1,4 +1,5 @@
 import SwiftUI
+import PlantTreeFeature
 
 struct GardenView: View {
   @ObservedObject var model: Model = .shared
@@ -10,7 +11,7 @@ struct GardenView: View {
         Label("Gardening is Fun", systemImage: "apple.meditate")
           .font(.title)
         seedsGrid(
-          title:"🫙Seeds Bank",
+          title: "🫙Bank with \(model.bank.seeds.count) Seeds",
           seeds: model.bank.seeds,
           background: Color(uiColor: .secondarySystemBackground),
           action: model.plant
@@ -45,12 +46,15 @@ struct GardenView: View {
     .sheet(isPresented: $isPlantTreePresented) {
       NavigationStack {
         PlantTreeView()
-          .navigationTitle("Plant a Tree")
       }
     }
   }
   
-  func seedsGrid(title: String, seeds: [Seed], background: Color, action: @escaping (Seed) -> Void) -> some View {
+  func seedsGrid(title: LocalizedStringResource,
+    seeds: [Seed],
+    background: Color,
+    action: @escaping (Seed) -> Void
+  ) -> some View {
     VStack(alignment: .leading) {
       Text(title)
         .font(.title2)
