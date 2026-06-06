@@ -3,7 +3,7 @@
 Welcome to the **Garden App** — a playful SwiftUI demo project built to explore and demonstrate the power of **App Intents** and **App Shortcuts** introduced in iOS 16.
 
 This project accompanies the blog post:
-👉 [App Shortcuts: Give Superpowers to Your App in a Matter of Minutes](https://rogy.app/1518)
+👉 [App Shortcuts: Give Superpowers to Your App in a Matter of Minutes](https://aigarden.uk/1518)
 
 ## 🍏 What’s Inside?
 This app simulates a tiny digital garden where you can:
